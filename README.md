@@ -8,4 +8,4 @@ This system also helps user to find whether a resource is available to borrow or
 
 Class Collaboration Diagram:
 
-![Alt Text](Class Collaboration diagram.png)
+![Alt Text](ClassCollaborationDiagram.png)
