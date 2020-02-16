@@ -9,3 +9,24 @@ This system also helps user to find whether a resource is available to borrow or
 Class Collaboration Diagram:
 
 ![Alt Text](ClassCollaborationDiagram.png)
+
+
+Login Page for users and librarian:
+
+![Alt Text](LoginPage.png)
+
+
+Users can view their borrowed Items in this page:
+
+![Alt Text](BorrowedItems.png)
+
+
+Librarian Page:
+
+![Alt Text](LibrarianPage.png)
+
+
+Inventory Browser provides filter for user to search the resources available in the library:
+
+![Alt Text](InventoryBrowser.png)
+
