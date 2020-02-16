@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="collectResourcePane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="423.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="CollectResourceController">
+    <top>
+        <Label prefHeight="98.0" prefWidth="222.0" text="Collect Resource" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="27.0"/>
+            </font>
+        </Label>
+    </top>
+    <center>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Username: "/>
+                <TextField fx:id="usernameTextField"/>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <Button fx:id="collectButton" mnemonicParsing="false" onAction="#storeAndGoToLibrarianPage" text="Collect"
+                BorderPane.alignment="CENTER"/>
+    </bottom>
+</BorderPane>

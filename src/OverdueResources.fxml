@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="overdueResourcesPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="OverdueResourcesController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="60.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="36.0" prefWidth="210.0" text="Overdue resources">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <ListView fx:id="overdueResourcesList" prefHeight="373.0" prefWidth="400.0" BorderPane.alignment="CENTER"/>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="63.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="64.0" prefWidth="400.0" spacing="15.0">
+                    <children>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#goToLibrarianPage" text="Close"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+</BorderPane>

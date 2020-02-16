@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="returnResourcesPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="ReturnResourcesController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="53.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="64.0" prefWidth="174.0" text="Return Resources">
+                    <font>
+                        <Font size="22.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="54.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="returnButton" mnemonicParsing="false" onAction="#storeAndGoToLibrarianPage"
+                                text="Return"/>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#goToLibrarianPage" text="Close"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <center>
+        <VBox prefHeight="119.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="152.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Username:"/>
+                        <TextField fx:id="usernameTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="152.0" prefWidth="400.0"
+                      spacing="10.0">
+                    <children>
+                        <Label text="Copy ID:"/>
+                        <TextField fx:id="copyIDTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="152.0" prefWidth="400.0"
+                      spacing="10.0">
+                    <children>
+                        <Label text="Resource ID:"/>
+                        <TextField fx:id="resourceIDTextField"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

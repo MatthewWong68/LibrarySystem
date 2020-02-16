@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="borrowResourcesPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="BorrowResourcesController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="53.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="64.0" prefWidth="174.0" text="Borrow Resources">
+                    <font>
+                        <Font size="22.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="54.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="borrowButton" mnemonicParsing="false" onAction="#storeAndGoToLibrarianPage"
+                                text="Borrow"/>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#goToLibrarianPage" text="Close"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="71.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Username:"/>
+                        <TextField fx:id="userusername"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="48.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Resource ID:"/>
+                        <TextField fx:id="rid"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

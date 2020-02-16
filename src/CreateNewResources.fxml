@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="createNewResourcesPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="CreateNewResourcesController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="55.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="54.0" prefWidth="243.0" text="Create a new resource">
+                    <font>
+                        <Font size="22.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="54.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="62.0" prefWidth="400.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#goToLibrarianPage" text="Close"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <center>
+        <VBox alignment="CENTER" prefHeight="119.0" prefWidth="400.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="17.0" prefWidth="100.0" text="Resource Type:"/>
+                <HBox alignment="CENTER" prefHeight="26.0" prefWidth="400.0">
+                    <children>
+                        <Button fx:id="bookButton" mnemonicParsing="false" onAction="#goToCreateBook" text="Book"/>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="27.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="dvdButton" lineSpacing="60.0" mnemonicParsing="false" onAction="#goToCreateDVD"
+                                text="DVD"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="400.0">
+                    <children>
+                        <Button fx:id="laptopButton" mnemonicParsing="false" onAction="#goToCreateLaptop"
+                                text="Laptop"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

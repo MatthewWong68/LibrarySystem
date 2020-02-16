@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="createNewUserPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="513.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="CreateNewUserController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="53.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="53.0" prefWidth="199.0" text="Create a new user">
+                    <font>
+                        <Font size="22.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="54.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="returnButton" mnemonicParsing="false" onAction="#storeAndGoToLibrarianPage"
+                                text="Confirm and create"/>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#goToLibrarianPage" text="Close"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <center>
+        <VBox prefHeight="119.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="400.0" spacing="10.0"/>
+                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="400.0" spacing="10.0"/>
+                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="400.0" spacing="10.0"/>
+                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="400.0" spacing="10.0"/>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="51.0" layoutY="18.0" text="Username:"/>
+                        <TextField fx:id="username" layoutX="127.0" layoutY="13.0" prefHeight="25.0" prefWidth="110.0"/>
+                        <Label layoutX="74.0" layoutY="54.0" text="Phone:"/>
+                        <TextField fx:id="phoneNumber" layoutX="127.0" layoutY="49.0" prefHeight="25.0"
+                                   prefWidth="110.0"/>
+                        <Label layoutX="275.0" layoutY="18.0" text="First name:"/>
+                        <TextField fx:id="firstName" layoutX="353.0" layoutY="13.0" prefHeight="25.0"
+                                   prefWidth="110.0"/>
+                        <Label layoutX="275.0" layoutY="54.0" text="Last name:"/>
+                        <TextField fx:id="lastName" layoutX="353.0" layoutY="49.0" prefHeight="25.0" prefWidth="110.0"/>
+                        <Label layoutX="62.0" layoutY="92.0" text="Address:"/>
+                        <TextField fx:id="address" layoutX="127.0" layoutY="87.0" prefHeight="27.0" prefWidth="336.0"/>
+                        <Label layoutX="122.0" layoutY="131.0" text="Profile Image:"/>
+                        <Button fx:id="avatarButton" layoutX="216.0" layoutY="126.0" mnemonicParsing="false"
+                                onAction="#goToChooseImagePage" text="Choose or draw a profile image"/>
+                    </children>
+                </Pane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

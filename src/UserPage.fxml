@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="userPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="UserPageController">
+    <center>
+        <VBox alignment="TOP_CENTER" prefHeight="229.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="199.0" prefWidth="310.0" spacing="20.0">
+                            <children>
+                                <Label text="Your Resources"/>
+                                <Button fx:id="borrowedItemsButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                        onAction="#goToBorrowedItems" prefHeight="27.0" prefWidth="130.0"
+                                        text="Borrowed Items"/>
+                                <Button fx:id="requestedItemsButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                        onAction="#goToRequestedItems" prefHeight="27.0" prefWidth="130.0"
+                                        text="Requested Items"/>
+                                <Button fx:id="reservedItemsButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                        onAction="#goToReservedItems" prefHeight="27.0" prefWidth="130.0"
+                                        text="Reserved Items"/>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="22.0" prefWidth="293.0" spacing="20.0">
+                            <children>
+                                <Label text="Your Profile"/>
+                                <Button fx:id="avatarButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                        onAction="#goToChooseImagePage" prefHeight="27.0" prefWidth="130.0"
+                                        text="Profile Picture"/>
+                                <Button fx:id="transactionHistoryButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                        onAction="#goToTransactionHistory" prefHeight="27.0" prefWidth="130.0"
+                                        text="Transactions"/>
+                                <Button fx:id="browseResourcesButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                        onAction="#goToInventoryBrowser" prefHeight="27.0" prefWidth="130.0"
+                                        text="Browse"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="73.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#goToLoginPage" text="Logout"
+                        textFill="RED"/>
+            </children>
+        </VBox>
+    </bottom>
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="usernameLabel" text="Label">
+                    <font>
+                        <Font name="System Bold" size="13.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="overdueResourceLabel" text="Label"/>
+                <Label fx:id="fineLabel" text="Label"/>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>

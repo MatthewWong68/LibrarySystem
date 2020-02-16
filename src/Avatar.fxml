@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/9.0.1" fx:controller="AvatarController">
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="338.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ChoiceBox fx:id="presetNumberChoiceBox" prefHeight="30.0" prefWidth="50.0"/>
+                        <Button fx:id="choosePresetButton" maxWidth="150.0" minWidth="90.0" mnemonicParsing="false"
+                                prefHeight="30.0" text="Choose Preset"/>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <VBox fx:id="currentAvatarContainer" alignment="CENTER" prefHeight="200.0" prefWidth="100.0"
+                      BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="currentAvatarLabel" alignment="CENTER" contentDisplay="CENTER"
+                               text="Current Avatar">
+                            <font>
+                                <Font size="10.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </center>
+    <left>
+        <VBox prefHeight="300.0" prefWidth="90.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="navigateToDashboard" minWidth="130.0" mnemonicParsing="false" prefHeight="30.0"
+                        text="Dashboard"/>
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefHeight="300.0" prefWidth="132.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="navigateToCustomDrawing" contentDisplay="RIGHT" minWidth="100.0" mnemonicParsing="false"
+                        prefHeight="30.0" text="Create Custom Avatar"/>
+            </children>
+        </VBox>
+    </right>
+    <bottom>
+        <HBox fx:id="allPresetImages" prefHeight="100.0" prefWidth="600.0" BorderPane.alignment="CENTER"/>
+    </bottom>
+</BorderPane>

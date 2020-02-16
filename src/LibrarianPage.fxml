@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="librarianPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="LibrarianPageController">
+    <center>
+        <HBox prefHeight="270.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" prefHeight="302.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="24.0" prefWidth="90.0" text="Manage Users"/>
+                        <Button fx:id="finePaymentButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#finePayment" prefHeight="27.0" prefWidth="140.0" text="Fine Payment"/>
+                        <Button fx:id="viewACopysBorrowingHistoryButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#goToViewACopysBorrowingHistory" prefHeight="27.0" prefWidth="140.0"
+                                text="Resource History"/>
+                        <Button fx:id="viewOverdueResourcesButton" mnemonicParsing="false"
+                                onAction="#overdueResourcesView" prefWidth="140.0" text="Overdue Resources"/>
+                        <Button fx:id="browseResourcesButton" mnemonicParsing="false" onAction="#goToInventoryBrowser"
+                                prefHeight="27.0" prefWidth="140.0" text="Browse Resources"/>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="302.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="24.0" prefWidth="129.0" text="Borrows and Returns" textAlignment="CENTER"/>
+                        <Button fx:id="borrowResourcesButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#borrowResources" prefHeight="27.0" prefWidth="140.0"
+                                text="Borrow Resources"/>
+                        <Button fx:id="returnResourcesButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#returnResources" prefHeight="27.0" prefWidth="140.0"
+                                text="Return Resources"/>
+                        <Button fx:id="collectResourceButton" maxHeight="-Infinity" maxWidth="-Infinity"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#collectResource" prefHeight="27.0" prefWidth="140.0"
+                                text="Collect Resource"/>
+                        <Label prefHeight="36.0" prefWidth="118.0" textAlignment="CENTER"/>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="300.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="24.0" prefWidth="97.0" text="Create and Edit" textAlignment="CENTER"/>
+                        <Button fx:id="createUserButton" mnemonicParsing="false" onAction="#createNewUser"
+                                prefHeight="27.0" prefWidth="140.0" text="Create User"/>
+                        <Button fx:id="editUserButton" mnemonicParsing="false" onAction="#editCurrentUser"
+                                prefHeight="27.0" prefWidth="140.0" text="Edit User"/>
+                        <Button fx:id="createResourcesButton" mnemonicParsing="false" onAction="#createNewResources"
+                                prefHeight="27.0" prefWidth="140.0" text="Create resource"/>
+                        <Button fx:id="editResourcesButton" mnemonicParsing="false" onAction="#editCurrentResources"
+                                prefHeight="27.0" prefWidth="140.0" text="Edit Resource"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox alignment="TOP_CENTER" prefHeight="47.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="logoutButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                minWidth="-Infinity" mnemonicParsing="false" onAction="#goToLoginPage" prefHeight="27.0"
+                                prefWidth="120.0" text="Logout" textFill="RED"/>
+                        <Button fx:id="avatarButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                minWidth="-Infinity" mnemonicParsing="false" onAction="#goToChooseImagePage"
+                                prefHeight="27.0" prefWidth="120.0" text="Profile Picture"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <top>
+        <ImageView fitHeight="98.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true"
+                   BorderPane.alignment="CENTER">
+            <image>
+                <Image url="@LibrarianPage.png"/>
+            </image>
+        </ImageView>
+    </top>
+</BorderPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="inventoryBrowserPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="InventoryBrowserController">
+    <top>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="108.0" prefWidth="612.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="63.0" prefWidth="206.0" text="Browse Resources">
+                    <font>
+                        <Font size="23.0"/>
+                    </font>
+                </Label>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="39.0" prefWidth="650.0" spacing="20.0">
+                    <children>
+                        <Label maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="135.0"
+                               text="Resource Title or ID"/>
+                        <TextField fx:id="searchInput" onAction="#refreshUserIn"/>
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#refreshList" text="Search"/>
+                        <CheckBox fx:id="filterDVDButton" mnemonicParsing="false" onAction="#filterDVD" selected="true"
+                                  text="DVD"/>
+                        <CheckBox fx:id="filterBookButton" mnemonicParsing="false" onAction="#filterBook"
+                                  selected="true" text="Book"/>
+                        <CheckBox fx:id="filterLaptopButton" mnemonicParsing="false" onAction="#filterLaptop"
+                                  selected="true" text="Laptop"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <ListView fx:id="searchOutput" prefHeight="249.0" prefWidth="414.0" BorderPane.alignment="CENTER"/>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="43.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="closeButton" mnemonicParsing="false" onAction="#goToUserPage" text="Close"/>
+            </children>
+        </VBox>
+    </bottom>
+    <right>
+        <Pane prefHeight="286.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="145.0" fitWidth="160.0" layoutX="21.0" layoutY="45.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../pablo_00000.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="line1" layoutX="21.0" layoutY="21.0"/>
+                <Label fx:id="line2" layoutX="177.0" layoutY="45.0"/>
+                <Label fx:id="line3" layoutX="177.0" layoutY="96.0"/>
+                <Label fx:id="line4" layoutX="177.0" layoutY="173.0"/>
+                <ListView fx:id="copiesOutput" layoutX="17.0" layoutY="200.0" prefHeight="166.0" prefWidth="293.0"/>
+                <Button fx:id="reserveButton" layoutX="17.0" layoutY="372.0" mnemonicParsing="false"
+                        onAction="#getResourceButtonPress" prefHeight="27.0" prefWidth="293.0" text="Get Resource"/>
+            </children>
+        </Pane>
+    </right>
+</BorderPane>

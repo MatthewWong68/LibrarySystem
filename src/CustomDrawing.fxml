@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="drawingBorderPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0"
+            onMousePressed="#onMousePressed" xmlns="http://javafx.com/javafx/9.0.1"
+            fx:controller="CustomDrawingController">
+    <center>
+        <Canvas fx:id="canvas" height="500.0" onMouseDragged="#onMouseDragged" onMouseReleased="#onMouseReleased"
+                width="500.0" BorderPane.alignment="CENTER"/>
+    </center>
+    <right>
+        <VBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="3.0"
+              BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="drawingToolLabel" text="  Drawing Tools"/>
+                <Button fx:id="straightLineButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0"
+                        text="Straight Line"/>
+                <Button fx:id="particleTraceButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0"
+                        text="Particle Trace"/>
+                <Button fx:id="eraseAllButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0"
+                        text="Erase All"/>
+                <Label fx:id="gapBetweenEraseAndColor">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="colorLabel" text="  Color"/>
+                <ColorPicker fx:id="colorPicker" prefHeight="40.0" prefWidth="90.0"/>
+                <Label fx:id="gapBetweenColorAndExport">
+                    <font>
+                        <Font size="72.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="setAvatarButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0"
+                        text="Set Avatar"/>
+                <Label fx:id="gapBetweenExportAndAvatr">
+                    <font>
+                        <Font size="30.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="closeButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" text="Close"/>
+            </children>
+            <padding>
+                <Insets left="5.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </right>
+</BorderPane>

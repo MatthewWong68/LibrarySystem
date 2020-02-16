@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="ManageEditCurrentUserPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/8" fx:controller="ManageEditCurrentUserController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="60.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="36.0" prefWidth="110.0" text="Edit User" textAlignment="CENTER">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="53.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="51.0" prefWidth="400.0" spacing="15.0">
+                    <children>
+                        <Button fx:id="saveButton" mnemonicParsing="false" text="Save"/>
+                        <Button fx:id="closeButton" mnemonicParsing="false" text="Close"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <center>
+        <VBox prefHeight="391.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0"/>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="First name: "/>
+                        <TextField fx:id="firstnameTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Last name:"/>
+                        <TextField fx:id="lastnameTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Phone no.: "/>
+                        <TextField fx:id="phoneNumberTextField" prefHeight="31.0" prefWidth="202.0"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Address:"/>
+                        <TextField fx:id="addressTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Balance:"/>
+                        <TextField fx:id="balanceTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0"/>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="57.0" prefWidth="400.0" spacing="10.0"/>
+                <HBox alignment="CENTER" prefHeight="57.0" prefWidth="400.0" spacing="10.0"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

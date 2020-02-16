@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="createNewDVDPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="CreateNewDVDController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="44.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="25.0" prefWidth="141.0" text="Create new DVD">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="54.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="createDVDButton" mnemonicParsing="false" onAction="#storeAndGoToLibrarianPage"
+                                text="Create"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <center>
+        <VBox prefHeight="234.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="353.0" prefWidth="400.0">
+                    <children>
+                        <Label layoutX="147.0" layoutY="39.0" text="Year:"/>
+                        <TextField fx:id="year" layoutX="200.0" layoutY="34.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                        <Label layoutX="106.0" layoutY="194.0" text="Image Path:"/>
+                        <TextField fx:id="imagepath" layoutX="200.0" layoutY="188.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                        <Label layoutX="69.0" layoutY="161.0" text="Subtitle language:"/>
+                        <TextField fx:id="subtitleLanguage" layoutX="200.0" layoutY="157.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                        <Label layoutX="115.0" layoutY="101.0" text="Language:"/>
+                        <TextField fx:id="language" layoutX="200.0" layoutY="96.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                        <TextField fx:id="title" layoutX="200.0" layoutY="4.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                        <Label layoutX="148.0" layoutY="9.0" text="Title:"/>
+                        <Label layoutX="125.0" layoutY="69.0" text="Director:"/>
+                        <TextField fx:id="director" layoutX="200.0" layoutY="65.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                        <Label layoutX="125.0" layoutY="131.0" text="Runtime:"/>
+                        <TextField fx:id="runtime" layoutX="200.0" layoutY="126.0" prefHeight="27.0" prefWidth="150.0"/>
+                        <Label layoutX="131.0" layoutY="251.0" text="Copies:"/>
+                        <TextField fx:id="numofCopiesTextField" layoutX="200.0" layoutY="246.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                        <Label layoutX="123.0" layoutY="280.0" text="Duration:"/>
+                        <TextField fx:id="durationTextField" layoutX="200.0" layoutY="275.0" maxHeight="-Infinity"
+                                   maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0"
+                                   prefWidth="150.0"/>
+                    </children>
+                </Pane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

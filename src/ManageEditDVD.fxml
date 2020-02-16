@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="manageEditDVDPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0"
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="ManageEditDVDController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="69.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="36.0" prefWidth="103.0" text="Edit DVD" textAlignment="CENTER">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox alignment="CENTER" prefHeight="65.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="64.0" prefWidth="400.0" spacing="15.0">
+                    <children>
+                        <Button fx:id="saveButton" mnemonicParsing="false" text="Save"/>
+                        <Button fx:id="closeButton" mnemonicParsing="false" text="Close"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </bottom>
+    <center>
+        <VBox prefHeight="361.0" prefWidth="400.0" spacing="9.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Title:"/>
+                        <TextField fx:id="titleTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Year:"/>
+                        <TextField fx:id="yearTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Thumbnail Path:"/>
+                        <TextField fx:id="thumbnailPathTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Number of copies:"/>
+                        <TextField fx:id="numberOfCopiesTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Director:"/>
+                        <TextField fx:id="directorTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" spacing="10.0">
+                    <children>
+                        <Label text="Runtime:"/>
+                        <TextField fx:id="runtimeTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="197.0" prefHeight="37.0" prefWidth="400.0"
+                      spacing="10.0">
+                    <children>
+                        <Label text="Language:"/>
+                        <TextField fx:id="languageTextField"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="234.0" prefHeight="37.0" prefWidth="400.0"
+                      spacing="10.0">
+                    <children>
+                        <Label text="Subtitle:"/>
+                        <TextField fx:id="subtitleTextField"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
