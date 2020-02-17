@@ -1,6 +1,4 @@
 # Library System
-Library System project
-
 This is a Java group project.
 
 This library system is an offline system. It allows user to borrow, return resources. Resources include Books, DVDs, Laptops.
